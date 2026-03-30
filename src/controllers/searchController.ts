@@ -10,7 +10,7 @@ export const search = (req: Request, res: Response) => {
     }
 
     let list = Pet.getFromName(query)
-    res.render('pages/pages', {
+    res.render('pages/page', {
         menu: createMenuObject(''),
         list,
         query
